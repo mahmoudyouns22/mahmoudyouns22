@@ -11,20 +11,24 @@ ransomware before it finishes encrypting.
 
 ### What I'm building
 
-**[ai-cyber-defense-system](https://github.com/mahmoudyouns22/ai-cyber-defense-system)** — Intrusion detection that acts on its own
+#### [ai-cyber-defense-system](https://github.com/mahmoudyouns22/ai-cyber-defense-system) — intrusion detection that acts on its own
+
 Random Forest over 41 NSL-KDD traffic features. Scapy captures live packets,
 the model scores them, attackers get redirected into a Flask honeypot,
 enriched with geolocation, and auto-blocked. A Streamlit dashboard shows it
 happening in real time.
+
 `99.87%` on a held-out split · `77.93%` on the KDDTest+ benchmark — both
 reported, because only one of them is honest.
 
-**[web-vuln-scanner](https://github.com/mahmoudyouns22/web-vuln-scanner)** — Reconnaissance from raw sockets
+#### [web-vuln-scanner](https://github.com/mahmoudyouns22/web-vuln-scanner) — reconnaissance from raw sockets
+
 Port scanning with banner grabbing, plus a web audit for missing security
 headers and exposed files like `/.env`. Built without wrapping `nmap`,
 because the point was to understand what a scan actually is.
 
-**AI Ransomware Defense** *(in progress)* — Containment, not detection
+#### AI Ransomware Defense *(in progress)* — containment, not detection
+
 An engine that watches filesystem activity for encryption-like behaviour,
 halts the responsible processes the moment it appears, and triggers an
 automated counter-response. Aimed at the gap signature-based antivirus
