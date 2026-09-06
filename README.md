@@ -39,9 +39,25 @@ leaves open: strains that have no signature yet.
 ### At Nexaura
 
 I co-founded Nexaura and own the entire technology function — architecture,
-development, deployment, delivery. We build web platforms, applications, and
-technical consulting for clients, including work shipped for companies in
-Denmark.
+development, deployment, delivery.
+
+#### [callaz.dk](https://callaz.dk) — production site for a Danish client
+
+Next.js and TypeScript, bilingual Danish/English with locale-aware routing,
+Tailwind, Zod-validated contact flows. Live.
+
+#### Nexaura Client Portal — internal product
+
+Next.js, Prisma over PostgreSQL, transactional email through Resend,
+react-hook-form with Zod, multi-language. Built end to end: schema, API
+routes, validation, delivery.
+
+#### [mz-phone-store](https://github.com/mahmoudyouns22/mz-phone-store) — Arabic RTL storefront
+
+~5,700 lines of vanilla JavaScript against Firebase Auth and Firestore, with
+an admin panel and WhatsApp checkout. No framework and no build step, on
+purpose: the owner updates products from a phone, and the site had to stay
+fast on mobile data.
 
 ---
 
@@ -50,8 +66,8 @@ Denmark.
 ```
 AI / ML        scikit-learn · pandas · NumPy · Random Forest · anomaly detection
 Security       Scapy · Burp Suite · Nmap · Wireshark · honeypots · incident response
-Languages      Python · C++ · TypeScript · SQL
-Building       Flask · Streamlit · Next.js · Git
+Languages      Python · TypeScript · JavaScript · C++ · SQL
+Building       Flask · Streamlit · Next.js · Prisma · Firebase · Tailwind · Git
 ```
 
 ---
