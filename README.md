@@ -11,6 +11,21 @@ ransomware before it finishes encrypting.
 
 ### What I'm building
 
+#### [kurdish-scam-detector](https://github.com/mahmoudyouns22/kurdish-scam-detector) — scam messages, caught in the language they arrive in
+
+Sorani Kurdish and Iraqi Arabic SMS fraud detection. Arabic phishing detection
+is well published; for Kurdish, as far as I could find, nothing existed — so
+the corpus is part of the contribution. Character n-grams over an Arabic-script
+normalisation layer, plus 28 interpretable signals.
+
+Five-fold scam-F1 `0.938 ± 0.026`. Train on Arabic, test on Kurdish: `0.890`
+against `0.949` in-language, on concept-grouped splits so parallel translations
+cannot leak. The whole classifier is `719 KB` of JSON running in your browser —
+nothing is uploaded, because the tool asks people to paste an SMS that may hold
+their bank details.
+
+The README states the synthetic-corpus caveat and the failure cases up front.
+
 #### [ai-cyber-defense-system](https://github.com/mahmoudyouns22/ai-cyber-defense-system) — intrusion detection that acts on its own
 
 Random Forest over 41 NSL-KDD traffic features. Scapy captures live packets,
