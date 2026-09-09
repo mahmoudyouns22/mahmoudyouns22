@@ -81,7 +81,7 @@ fast on mobile data.
 ```
 AI / ML        scikit-learn · pandas · NumPy · Random Forest · anomaly detection
 Security       Scapy · Burp Suite · Nmap · Wireshark · honeypots · incident response
-Languages      Python · TypeScript · JavaScript · C++ · SQL
+Languages      Python · TypeScript · JavaScript · C++ · SQL . HTML . CSS
 Building       Flask · Streamlit · Next.js · Prisma · Firebase · Tailwind · Git
 ```
 
