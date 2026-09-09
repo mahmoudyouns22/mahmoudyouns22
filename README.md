@@ -51,7 +51,7 @@ leaves open: strains that have no signature yet.
 
 ---
 
-### At Nexaura
+### At Nexaura . Padborg, Denmark
 
 I co-founded Nexaura and own the entire technology function — architecture,
 development, deployment, delivery.
