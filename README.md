@@ -11,6 +11,33 @@ ransomware before it finishes encrypting.
 
 ### What I'm building
 
+#### [destdeng](https://github.com/mahmoudyouns22/destdeng) — sign language to text, in the language the reader needs · [live](https://mahmoudyouns22.github.io/destdeng/)
+
+There are roughly 10,000 deaf people in the Kurdistan Region and, as of 2024,
+five working sign language interpreters. Kurdish Sign Language is its own
+language with its own dialects, and there is no public dataset for it — every
+off-the-shelf sign recogniser is trained on a language nobody here signs.
+
+A camera reads 21 hand keypoints per hand. The classifier outputs a
+language-neutral label, and the label is written in English, Arabic or Sorani
+Kurdish — whichever the person reading the screen actually reads, switchable
+mid-conversation because the reader is often not the person holding the device.
+
+The metric is not accuracy. A wrong translation in a hospital is worse than no
+translation, so recognition passes two independent gates and refuses rather
+than guesses — feeding the trained model pure noise produced a `100%` confident
+answer before the novelty gate existed. Both gates are asserted in the test
+suites, in Python and again in JavaScript, because a gate that exists in one
+language and is assumed in the other is not a gate.
+
+Two front ends over one pipeline: a desktop app, and a browser build that runs
+entirely on the device with nothing uploaded. The two feature implementations
+are held to numerical equality by a parity check, since a vector built
+differently is not a worse input but a meaningless one scored with confidence.
+
+The word board works today, in all three languages, with no model at all.
+Recording the vocabulary is the step still under way.
+
 #### [kurdish-scam-detector](https://github.com/mahmoudyouns22/kurdish-scam-detector) — scam messages, caught in the language they arrive in
 
 Sorani Kurdish and Iraqi Arabic SMS fraud detection. Arabic phishing detection
