@@ -45,13 +45,20 @@ is well published; for Kurdish, as far as I could find, nothing existed — so
 the corpus is part of the contribution. Character n-grams over an Arabic-script
 normalisation layer, plus 28 interpretable signals.
 
-Five-fold scam-F1 `0.938 ± 0.026`. Train on Arabic, test on Kurdish: `0.890`
-against `0.949` in-language, on concept-grouped splits so parallel translations
-cannot leak. The whole classifier is `719 KB` of JSON running in your browser —
-nothing is uploaded, because the tool asks people to paste an SMS that may hold
-their bank details.
+Five-fold scam-F1 `0.961 ± 0.012`. Latin-script Kurdish — how a lot of Sorani
+is actually typed on a phone — used to be its worst case at `0.483`; trained on
+one romanisation and tested on a different, unseen one, it now reaches `0.886`
+with false positives on legitimate messages unchanged.
 
-The README states the synthetic-corpus caveat and the failure cases up front.
+Train on Arabic, test on Kurdish: `0.832` against `0.884` in-language, on
+concept-grouped splits so parallel translations cannot leak. Strip the
+hand-built signals and transfer falls to about `0.48` — the shared script
+carries far less of it than it first appeared.
+
+The whole classifier is `1.2 MB` of JSON running in your browser — nothing is
+uploaded, because the tool asks people to paste an SMS that may hold their bank
+details. The README states the synthetic-corpus caveat and the failure cases up
+front, including a regression the romanisation fix itself caused.
 
 #### [ai-cyber-defense-system](https://github.com/mahmoudyouns22/ai-cyber-defense-system) — intrusion detection that acts on its own
 
@@ -115,6 +122,10 @@ Building       Flask · Streamlit · Next.js · Prisma · Firebase · Tailwind �
 ---
 
 ### Elsewhere
+
+Selected participant, **AI Olympiad 2026** — one of 100 chosen across the
+Kurdistan Region; organised by Ovanya with the Consulate General of the Republic
+of Korea in Erbil and the KRG Department of Technology.
 
 8th place, 11th National Innovation Competition in Engineering (NICE 2026),
 Tishk International University.
