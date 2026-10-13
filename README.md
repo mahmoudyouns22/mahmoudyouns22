@@ -4,8 +4,7 @@
 
 I build AI systems that run — not prototypes that stop at an accuracy score.
 Most of my work sits where machine learning meets security: detecting attacks
-in live traffic, responding to them without a human in the loop, and stopping
-ransomware before it finishes encrypting.
+in live traffic and responding to them without a human in the loop.
 
 ---
 
@@ -75,13 +74,6 @@ reported, because only one of them is honest.
 Port scanning with banner grabbing, plus a web audit for missing security
 headers and exposed files like `/.env`. Built without wrapping `nmap`,
 because the point was to understand what a scan actually is.
-
-#### AI Ransomware Defense *(in progress)* — containment, not detection
-
-An engine that watches filesystem activity for encryption-like behaviour,
-halts the responsible processes the moment it appears, and triggers an
-automated counter-response. Aimed at the gap signature-based antivirus
-leaves open: strains that have no signature yet.
 
 ---
 
