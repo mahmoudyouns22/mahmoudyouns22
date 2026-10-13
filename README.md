@@ -127,7 +127,7 @@ Selected participant, **AI Olympiad 2026** — one of 100 chosen across the
 Kurdistan Region; organised by Ovanya with the Consulate General of the Republic
 of Korea in Erbil and the KRG Department of Technology.
 
-8th place, 11th National Innovation Competition in Engineering (NICE 2026),
+12th place, 11th National Innovation Competition in Engineering (NICE 2026),
 Tishk International University.
 
 Kurdish · Arabic · English
