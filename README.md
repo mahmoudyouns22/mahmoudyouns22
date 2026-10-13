@@ -37,6 +37,22 @@ differently is not a worse input but a meaningless one scored with confidence.
 The word board works today, in all three languages, with no model at all.
 Recording the vocabulary is the step still under way.
 
+#### Radd *(pre-launch)* — a WhatsApp receptionist that speaks the customer's dialect
+
+An assistant that takes restaurant orders and clinic bookings over WhatsApp in
+Iraqi Arabic and Sorani Kurdish — by text, by voice note, or on a live call. It
+is my own venture, built on Python, FastAPI and Gemini.
+
+The rules that matter live in code, not in the prompt. Prices are computed
+from the menu, never by the model. Every reply is checked before it is sent,
+for prices that are not on the menu and for leaked model names. Complaints and
+allergies go straight to a person, and nothing is confirmed until a member of
+staff presses a button.
+
+`122` automated tests, and a `30`-case Arabic and Kurdish evaluation run
+against the live model. Text and voice ordering work end to end; WhatsApp call
+integration and launch are still ahead. The code is private.
+
 #### [kurdish-scam-detector](https://github.com/mahmoudyouns22/kurdish-scam-detector) — scam messages, caught in the language they arrive in
 
 Sorani Kurdish and Iraqi Arabic SMS fraud detection. Arabic phishing detection
